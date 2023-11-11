@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,
+                         initial-scale=1.0">
+    <title>DISEASE INFO</title>
+    <link rel="stylesheet"
+          href="{% static 'login.css' %}">
+          <script src="{% static 'login.js' %}"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="heading">DISEASE INFO</h1>
+        <h3 class="title"> Login</h3>
+    </header>
+
+    <!-- container div -->
+    <div class="container">
+
+        <div class="btn">
+            <button class="login">Login</button>
+
+        </div>
+        <p>{{ message }}</p>
+
+        <!-- Form section that contains the
+             login and the signup form -->
+        <form class="form-section" method="POST">
+            {% csrf_token %}
+
+            <!-- login form -->
+            <div class="login-box">
+                <input type="text"
+                       class="username ele"
+                       placeholder="UserName"
+                       name="username">
+                <input type="password"
+                       class="password ele"
+                       placeholder="Password"
+                       name="password">
+                <button class="clkbtn">Login</button>
+
+                    <p>Don't have an account?<a href="/signup/">Signup</a></p>
+
+
+            </div>
+
+
+
+         </form>
+
+    </div>
+<script src="{% static 'login.js' %}"></script>
+</body>
+</html>
