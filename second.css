@@ -69,6 +69,14 @@
     border: none;
     cursor: pointer;
 } 
+.content{
+    margin-left: 10px;
+}
+.content h1{
+    color:rgb(70, 48, 238); 
+    padding-top:60px;
+    padding-bottom: 10px;
+}
 .dashboard-button {
     position: fixed;
     bottom: 20px;
