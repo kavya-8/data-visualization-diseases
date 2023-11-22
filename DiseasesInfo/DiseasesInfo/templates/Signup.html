@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,
+                         initial-scale=1.0">
+    <title>DISEASE INFO</title>
+    <link rel="stylesheet"
+          href="{% static 'signup.css' %}">
+</head>
+
+<body>
+    <header>
+        <h1 class="heading">DISEASE INFO</h1>
+        <h3 class="title"> Signin</h3>
+    </header>
+
+
+    <div class="container">
+
+        <!-- upper button section to select
+             the login or signup form -->
+       <!--<div class="slider"></div>-->
+             <div class="btn">
+                <button class="Signin">Signin</button>
+
+             </div>
+
+        <!-- Form section that contains the
+             login and the signup form -->
+                <form class="form-section" method="POST">
+                {% csrf_token %}
+
+
+            <!-- login form -->
+                <div class="Signin-box">
+                    {{ form.as_p}}
+                    <!--{% for fm in form %}
+                      {{fm}}  {{fm.errors|striptags}}
+                    {% endfor %}-->
+                   <!--<input type="text"
+                          class="form-control"
+                          placeholder="UserName"
+                          name="username">
+                   <input type="password"
+                          class="form-control"
+                          placeholder="Password"
+                          name="password">-->
+                   <button class="clkbtn">Signin</button>
+                </div>
+
+
+
+                </form>
+               </div>
+
+<script src="{% static 'signup.js' %}" ></script>
+</body>
+</html>
