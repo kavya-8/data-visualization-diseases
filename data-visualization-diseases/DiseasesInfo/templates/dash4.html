@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href='{% static "dashboard.css" %}'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="{% static 'heartbeat2.png' %}">
+</head>
+<body style="
+    background-color: #f3f6f9;">
+    <div id="navlist" style="background-color: #00153c;">
+        <a href="/">Home</a>
+
+
+        <div class="login">
+            <a href="/login/">Login</a>
+        </div>
+        <a href="/search/">Search</a>
+        <div class="navlist-imgage"  style="position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    filter: brightness(200%)" >
+            <img src="{% static 'heartbeat2.png' %}" alt="Image Description" style="width: 40px;
+    height: auto;">
+        </div>
+
+        <iframe title="Report Section" width="1500" height="773.5" src="https://app.powerbi.com/view?r=eyJrIjoiZGQzYjlmNmYtNWUyNi00OGMwLWFiMjUtNDg0ZTVkNTEwYzgxIiwidCI6IjhhZDE4ZGEwLWQ5YjUtNGFmYy04ZGM3LTBmMTY5MzgxOWFjMiJ9" frameborder="0" allowFullScreen="true"></iframe>
+
+    </div>
+
+</body>
+
+
+</html>

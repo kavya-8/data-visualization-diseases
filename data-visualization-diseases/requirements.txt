@@ -1,0 +1,39 @@
+Software Requirements
+
+Operating System:
+Windows 10 / macOS / Linux (Ubuntu, CentOS, etc.)
+
+Software Dependencies:
+Python 3.x installed
+PyCharm IDE (Community or Professional edition)
+Django web framework
+Power BI Desktop
+Web browser (Google Chrome, Mozilla Firefox, Safari, etc.)
+
+Installation Steps
+1. Python Installation
+Ensure that Python 3.x is installed on your system. You can download Python from the official website: Python Downloads
+
+2. PyCharm Installation
+Download and install PyCharm from the official website: PyCharm Downloads
+
+3. Django Installation
+Open PyCharm and create a new project. Go to File -> Settings -> Project -> Python Interpreter and ensure that the Python interpreter is set to the correct Python 3.x version. Install Django using pip, the Python package manager:
+pip install django
+
+
+3. Project Setup
+Clone or download the project repository from its source.
+
+4. Run the Django Application
+Navigate to the project directory containing manage.py using the command line or terminal:
+cd ./DiseasesInfo/
+and run the Django development server:
+python manage.py runserver
+
+5. Integrate Power BI Visualizations
+Integrate Power BI visualizations into your Django application by embedding the Power BI report or dashboard using Power BI Embedded or Power BI Service APIs. Follow Microsoft's documentation for embedding Power BI content into a web application.
+
+6. Access the Website
+Open a web browser and navigate to http://localhost:8000 (or the URL specified by Django's development server) to access the disease information website.
+
